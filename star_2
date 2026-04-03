@@ -1,0 +1,109 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class star_1 {
+    
+    int rows = 4;
+    int cols = 4;
+    int num = 1;
+    int rows5A = 3;
+    int cols5A = 2;
+    int rows6 = 3;
+    int cols6 = 3;
+    String star1 = "*";
+    int rows7 = 3;
+    String char_A = "A";
+
+    public static void main(String[] args) {
+        star_1 st = new star_1();
+        st.fourth_A(st.rows, st.cols, st.num);
+        st.fifth_A(st.rows5A, st.cols5A, st.num);
+        st.sixth(st.rows6, st.star1);
+        st.seventh(st.rows7,st.char_A);
+        st.eighth(st.rows7,st.num);
+        st.ninth(st.rows7, st.num);
+        st.tenth(st.rows7, st.num);
+    }
+    
+    // Fourth(A) Program
+    public void fourth_A(int rows, int cols , int num){
+        System.out.println("-----fourth_A Program-----");
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<cols; j++){
+                System.out.print(num);
+                num++;
+            }
+            System.out.println();
+        }
+    }
+    
+    // Fifth(A) Program (Time Complexity - rowsA*cols5A)
+    public void fifth_A(int rows5A, int cols5A, int num){
+         System.out.println("-----fifth_A Program-----");
+        for(int i=0; i<rows5A; i++){
+            for (int j=0; j<cols5A; j++){
+                  System.out.print(num);
+                  num++;
+            }
+            System.out.println();
+        }
+    }
+    
+    // (Time Complexity = n^2)
+    public void sixth(int rows6, String star1){
+         System.out.println("-----sixth Program-----");
+         for(int i=0; i<rows6; i++){
+            for(int j=0; j<=i; j++){
+             System.out.print(star1);
+            }
+            System.out.println();
+         }
+    }
+
+    // (Time Complexity = n^2)
+    public void seventh(int rows7, String char_A){
+         System.out.println("-----seventh Program-----");
+        for(int i=0; i<rows7; i++){
+            for(int j=0; j<=i; j++){
+                System.out.print(char_A);
+            }
+             System.out.println();
+        }
+    }
+
+  // (Time Complexity = n^2)
+    public void eighth(int rows7, int num){
+         System.out.println("-----eighth Program-----");
+        for(int i=0; i<rows7; i++){
+            for(int j=0; j<=i; j++){
+                 System.out.print(num);
+                 num++;
+            }
+             System.out.println();
+        }
+    }
+    
+    // (Time Complexity = n^2)
+    public void ninth(int rows7, int num){
+         System.out.println("-----ninth Program-----");
+        for(int i=rows7; i>0; i--){
+            for(int j=0; j<i; j++){
+                System.out.print(num);
+            }
+             System.out.println();
+        }
+    }
+    
+     // (Time Complexity = n^2)
+    public void tenth (int rows7, int num){
+         System.out.println("-----tenth Program-----");
+         for(int i=0; i<rows7; i++){
+             for(int j=rows7; j>i; j--){
+                   System.out.print(num);
+                   num++;
+             }
+             System.out.println();
+         }
+    }
+}
+    
