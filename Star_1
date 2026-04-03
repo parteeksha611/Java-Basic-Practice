@@ -1,0 +1,69 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class star {
+    
+    String star2 = "****";
+    int n1 = 4;
+    
+    int rows = 4;
+    int cols = 4;
+     String star1 = "*";
+    
+    public static void main(String[] args) {
+        star st = new star();
+       st.printstar1();//o(1)
+        st.printstar2(st.star2);
+        st.printstar3(st.n1);
+       st.printstar4(st.rows, st.cols, st.star1);
+        st.printstar5(st.rows, st.cols, st.star1);
+    }
+
+// First Program
+    public void printstar1 (){
+         System.out.println("First Program");
+        System.out.println("*");
+    }
+    
+    // Second Program
+    public void printstar2 (String star2){
+         System.out.println("Second Program");
+        System.out.println(star2);
+    }
+    
+    // Third Program
+    public void printstar3 (int n1){
+         System.out.println("Third Program");
+          for (int i=0 ;i<n1; i++){
+              System.out.println("*");
+          }
+    }
+    
+    // Fourth Program  - rows * cols = n^2 (Time Complexity)
+     public void printstar4 (int rows, int cols, String star1){
+          System.out.println("Fourth Program");
+          for (int i=0 ;i<rows; i++){
+              for(int j=0; j<cols; j++){
+                  System.out.print(star1);
+              }
+              System.out.println();
+          }
+    }
+    
+    // Fifth Program (Time Complexity = n^2)
+      public void printstar5 (int rows, int cols, String star1){
+           System.out.println("Fifth Program");
+          for (int i=0 ;i<rows; i++){
+             if(i==0){
+                for(int j=0; j<cols; j++){
+                  System.out.print(star1);
+                }
+                System.out.println();
+            }
+            else{
+                System.out.println(star1);  
+            }
+        }
+    }
+}
+    
