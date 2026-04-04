@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class AgeMakesAdult {
+    
+    int age = 38;
+    
+    public static void main(String[] args) {
+        AgeMakesAdult st = new AgeMakesAdult();
+        st.checkIfPersonIsAdult(st.age);
+    }
+    
+    // Check if given person age is adult
+    public void checkIfPersonIsAdult(int age){
+       if(age>=18){
+           System.out.println(age+" -> Person is adult.");
+       }
+       else{
+            System.out.println(age+" -> Person is not adult.");
+       }
+    }
+}
