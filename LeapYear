@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class yearIsLeap {
+    
+    int year = 2036;
+    
+    public static void main(String[] args) {
+        yearIsLeap st = new yearIsLeap();
+        st.findOutYearIsLeap(st.year);
+    }
+    
+    // Print Product Of Numbers Program With For loop
+    public void findOutYearIsLeap(int year){
+       if((year%4==0 && year%100!=0) || year%400==0){
+           System.out.println(year+" year is leap.");
+       }
+       else{
+            System.out.println(year+" year is not leap.");
+       }
+    }
+}
