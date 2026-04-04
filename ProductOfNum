@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class productOfNum {
+    
+    int limit = 5;
+    int  num = 1;
+    
+    public static void main(String[] args) {
+        productOfNum st = new productOfNum();
+        st.printProductOfNum(st.num, st.limit);
+    }
+    
+    // Print Product Of Numbers Program With For loop
+    public void printProductOfNum(int num, int limit){
+       for(int i=num; i<=limit; i++){
+          num *= i;
+       }
+        System.out.println(num);
+    }
+    
+}
