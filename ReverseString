@@ -1,0 +1,21 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class ReverseString {
+    
+    String str = "Automation";
+    String res = "";
+    
+    public static void main(String[] args) {
+        ReverseString rs = new ReverseString();
+        rs.reverseString();
+    }
+    
+    // Reverse String
+    public void reverseString(){
+       for(int i=0; i<str.length(); i++){
+            res = str.charAt(i)+res;
+       }
+       System.out.println(res);
+    }
+}
