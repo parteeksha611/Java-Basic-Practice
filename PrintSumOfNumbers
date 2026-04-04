@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class printSumOfNum {
+    
+    int limit = 15;
+    int  res = 0;
+    
+    public static void main(String[] args) {
+        printSumOfNum st = new printSumOfNum();
+        st.printSumOfNum(st.limit, st.res);
+    }
+    
+    // Print Sum Of Numbers Program With For loop
+    public void printSumOfNum(int limit, int res){
+       for(int i=0; i<=limit; i++){
+          res += i;
+       }
+        System.out.println(res);
+    }
+    
+}
