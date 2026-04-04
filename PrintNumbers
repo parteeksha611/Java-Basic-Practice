@@ -1,0 +1,30 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class printNum {
+    
+    int num = 1;
+   int limit = 5;
+    
+    public static void main(String[] args) {
+        printNum st = new printNum();
+        st.printNumbers(st.num, st.limit);
+         st.printNumbersWithWhile(st.num, st.limit);
+    }
+    
+    // Print Numbers Program With For loop
+    public void printNumbers(int num, int limit){
+        for(int i=0; i<limit; i++){
+            System.out.println(num);
+            num++;
+        }
+    }
+    
+    // Print Numbers Program With While loop
+    public void printNumbersWithWhile(int num, int limit){
+        while(num<limit+1){
+            System.out.println(num);
+            num++;
+        }
+    }
+}
