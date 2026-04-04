@@ -1,0 +1,57 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class star {
+    
+    int rows = 6;
+    int num = 1;
+    char ch = 'A';
+    int cols =5;
+    String star = "*";
+    
+    public static void main(String[] args) {
+        star st = new star();
+        st.tenth(st.rows, st.num);
+        st.eleventh(st.rows, st.ch);
+        st.twelveth(st.rows, st.cols, st.star);
+    }
+    
+    // Tenth Program
+    public void tenth(int rows, int num){
+        System.out.println("Tenth Program");
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<=i; j++){
+           System.out.print(num);
+            }
+            System.out.println();
+            num++;
+        }
+    }
+
+    // Eleventh Program
+    public void eleventh(int rows, char ch){
+         System.out.println("Eleventh Program");
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<=i; j++){
+                System.out.print(ch);
+                ch++;
+            }
+            System.out.println();
+        }
+    }
+    
+    // Twelveth Program
+  public void twelveth(int rows, int cols, String star){
+    System.out.println("Twelveth Program");
+    for(int i = 0; i < rows; i++){
+        for(int j = 0; j < cols; j++){
+            if(i == 0 || i == rows - 1 || j == 0 || j == cols -1){
+                System.out.print(star);
+            } else {
+                System.out.print(" ");
+            }
+        }
+        System.out.println();
+    }
+}
+}
