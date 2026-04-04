@@ -1,0 +1,19 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class ConvertCelsiusToFarenheit {
+    
+    double celsius = 100;
+    double res = 0;
+    
+    public static void main(String[] args) {
+        ConvertCelsiusToFarenheit st = new ConvertCelsiusToFarenheit();
+        st.convertFromCelsiusToFarenheit(st.celsius);
+    }
+    
+    // Convert from celsius to farenheit
+    public void convertFromCelsiusToFarenheit(double celsius){
+        res = (celsius*9/5)+32;
+       System.out.println(celsius+" celsius is "+res+" Farenheit");
+    }
+}
