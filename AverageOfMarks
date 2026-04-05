@@ -1,0 +1,23 @@
+
+class AverageOfMarks {
+    
+    int m1 = 98;
+    int m2 = 77;
+    int m3 = 65;
+    int m4 = 89;
+    int m5 = 90;
+    
+    public static void main(String[] args) {
+     AverageOfMarks am = new AverageOfMarks();
+     am.findAverageOfMarks();
+    }
+
+    public void findAverageOfMarks(){
+        
+        int fm = m1+m2+m3+m4+m5;
+         System.out.println("sum is "+fm);
+        double avg = fm/5;
+        System.out.println("Average is "+avg);
+        
+    }
+}
