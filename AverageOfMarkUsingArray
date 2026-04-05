@@ -1,0 +1,23 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class AverageOfMarksUsingArray {
+    
+    int arrSums[] = {98, 87, 79, 88, 89};
+    int sum = 0;
+    double result = 0;
+    
+    public static void main(String[] args) {
+       AverageOfMarksUsingArray am = new AverageOfMarksUsingArray();
+       am.findAverageOfMarksUsingArray();
+    }
+    
+    public void findAverageOfMarksUsingArray(){
+        for(int i=0; i<arrSums.length; i++){
+            sum += arrSums[i];
+        }
+         System.out.println(sum);
+          result = (double) sum/arrSums.length;
+          System.out.println(result);
+    }
+}
