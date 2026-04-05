@@ -1,0 +1,27 @@
+
+class PallindromeNum {
+    
+    int num = 101;
+    int res = 0;
+    
+    
+    public static void main(String[] args) {
+        PallindromeNum pnum = new PallindromeNum();
+        pnum.pallindromeNumber();
+    }
+    
+    public void pallindromeNumber(){
+        int originalNum = num;
+        while(num !=0){
+        int rem = num%10;
+        res = res*10+rem;
+        num = num/10;
+        }
+        if(res == originalNum){
+        System.out.println(res+ " -> This is palindrome");
+        }
+        else{
+            System.out.println(res+ " -> This is not palindrome");
+        }
+    }
+}
