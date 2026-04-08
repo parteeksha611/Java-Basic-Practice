@@ -1,0 +1,25 @@
+
+class MoveZeros {
+    
+   int num[] = {0,1,3,4,0,9,0,8};
+   int j = 0;
+   
+    public static void main (String a[]){
+       MoveZeros mz = new MoveZeros();
+       mz.moveZeros();
+    }
+    
+    public void moveZeros() {
+       for(int i=0; i<num.length; i++){
+           if(num[i] != 0){
+               int temp = num[i];
+               num[i] = num[j];
+               num[j] = temp;
+               j++;
+           }
+       }
+       for(int numVal : num){
+       System.out.println(numVal);
+       }
+    }
+}
