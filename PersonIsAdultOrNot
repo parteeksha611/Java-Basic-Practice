@@ -15,6 +15,9 @@ class AgeMakesAdult {
        if(age>=18){
            System.out.println(age+" -> Person is adult.");
        }
+       else if(age<0){
+            System.out.println(age+" -> Invalid Input");
+       }
        else{
             System.out.println(age+" -> Person is not adult.");
        }
