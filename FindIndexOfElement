@@ -1,0 +1,23 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Scanner;
+class returnIndex {
+    
+    int[] num = {1, 2, 8 ,76, 6, 38};
+    
+    int searchNum = 39;
+    
+    public static void main(String[] args) {
+        returnIndex st = new returnIndex();
+       System.out.println(st.returnIndexOfElement());
+    }
+
+    public int returnIndexOfElement(){
+       for(int i=0; i<num.length; i++){
+           if(num[i] == searchNum){
+               return i;
+           }
+       }
+       return -1;
+    }
+}
