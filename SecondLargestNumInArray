@@ -3,7 +3,7 @@
 
 class Main {
     
-    int num[] = {76, 9, 8, 3, 10, 11, 89};
+    int num[] = {76, 9, 8, 3, 10, 11, 89, 10};
     int largestNum = 0;
     int secondLargestNum = 0;
     
@@ -18,7 +18,7 @@ class Main {
                 secondLargestNum = largestNum;
                 largestNum = num[i];
             }
-            else if(num[i] > secondLargestNum){
+            else if(num[i] > secondLargestNum && num[i] != largestNum){
                 secondLargestNum = num[i];
             }
         }
