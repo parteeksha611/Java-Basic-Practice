@@ -1,0 +1,22 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class Main {
+    
+    int num[] = {2, 7, -9, 8, -7, 5};
+    int sum = 0;
+    
+    public static void main(String[] args) {
+       Main m = new Main();
+       System.out.println(m.findNegativeNum());
+    }
+    
+    public int findNegativeNum(){
+        for(int i=0; i<num.length; i++){
+            if(num[i]<0){
+                sum++;
+            }
+        }
+        return sum;
+    }
+}
