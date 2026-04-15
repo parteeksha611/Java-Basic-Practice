@@ -15,7 +15,7 @@ class FindNthLargestNumber {
     }
     
     public void findNthLargestNumber(int num[], int n) {
-        if(n != 0 || n>num.length){
+        if(n != 0 && n<=num.length){
          Arrays.sort(num);
          int nthLargest = num[num.length - n];
         System.out.println(nthLargest);
