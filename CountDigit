@@ -1,0 +1,23 @@
+import java.util.HashMap;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+class CountDigit {
+    
+   int num = 4567;
+   int count = 0;
+
+    public static void main (String a[]){
+       CountDigit cd = new CountDigit();
+       cd.countDigit(cd.num, cd.count);
+    }
+    
+    public void countDigit(int num, int count) {
+        while(num != 0){
+        num = num/10;   //(% gets the last digit whereas / removes the last digit)
+        count++;
+        }
+        System.out.println(count);
+    }
+}
