@@ -1,0 +1,24 @@
+import java.util.HashMap;
+import java.util.Arrays;
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Map;
+class FindNthLargestNumber {
+    
+   int num[] = {12, 14, 15 ,17, 90, 67, 34};
+   int n = 7;
+   
+   
+    public static void main (String a[]){
+       FindNthLargestNumber ln = new FindNthLargestNumber();
+       ln.findNthLargestNumber(ln.num, ln.n);
+    }
+    
+    public void findNthLargestNumber(int num[], int n) {
+        if(n != 0 || n>num.length){
+         Arrays.sort(num);
+         int nthLargest = num[num.length - n];
+        System.out.println(nthLargest);
+        }
+    }
+}
