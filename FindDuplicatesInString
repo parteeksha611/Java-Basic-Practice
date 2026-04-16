@@ -1,0 +1,46 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.Map;
+import java.util.HashMap;
+class Main {
+    String str = "automationnn";
+    
+    public static void main(String[] args) {
+        Main m = new Main();
+        m.findDuplicates(m.str);
+    }
+    
+    public void findDuplicates(String str){
+        
+        str = str.toLowerCase().trim();
+        HashMap<String, Integer> hm = new HashMap<>();
+        
+        for(int i=0; i<str.length(); i++){
+             String ch = String.valueOf(str.charAt(i)); 
+            hm.put(ch,hm.getOrDefault(ch ,0)+1);
+        }
+        
+        for(Map.Entry<String, Integer> entry: hm.entrySet()){
+            if(entry.getValue()>1){
+                System.out.println(entry.getKey() + " is repeated " + entry.getValue()+ " times");
+            }
+        }
+    }
+    
+     public void findDuplicatesUsingCharacter(String str){
+        
+        str = str.toLowerCase().trim();
+        HashMap<Character, Integer> hm = new HashMap<>();
+        
+        for(int i=0; i<str.length(); i++){
+            hm.put(str.charAt(i),hm.getOrDefault(str.charAt(i) ,0)+1);
+        }
+        
+        for(Map.Entry<Character, Integer> entry: hm.entrySet()){
+            if(entry.getValue()>1){
+                System.out.println(entry.getKey() + " is repeated " + entry.getValue()+ " times");
+            }
+        }
+    }
+    
+}
