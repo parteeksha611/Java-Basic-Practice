@@ -21,5 +21,8 @@ class MoveZeros {
        for(int numVal : num){
        System.out.println(numVal);
        }
+        // print as array
+      // System.out.println(Arrays.toString(num));
+
     }
 }
