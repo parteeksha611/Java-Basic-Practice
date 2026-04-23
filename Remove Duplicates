@@ -1,0 +1,26 @@
+//Given an integer array nums sorted in non-decreasing order, //remove the duplicates in-place such that each unique element //appears only once. The relative order of the elements should //be kept the same.
+import java.util.*;
+class Solution {
+    
+    int nums[] = {0, 0, 1,1, 2, 2, 3};
+    
+    public static void main(String a[]){
+        Solution s = new Solution();
+        System.out.println(s.removeDuplicates(s.nums));
+    }
+    
+    
+    public int removeDuplicates(int[] nums) {
+
+        int j =0;
+
+        for(int i=1; i<nums.length; i++){
+            if(nums[i] != nums[j]){
+                j++;
+                nums[j] = nums[i];
+            }
+        }
+        System.out.println(Arrays.toString(nums));
+     return j + 1;
+    }
+}
